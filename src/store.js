@@ -6,11 +6,6 @@ import rootReducer from './reducers'
 
 export const history = createHistory()
 
-const initialState = {
-  items: [],
-  itemHasErrored: false,
-  itemIsLoading: false
-}
 const enhancers = []
 const middleware = [
   thunk,
@@ -32,7 +27,7 @@ const composedEnhancers = compose(
 
 const store = createStore(
   rootReducer,
-  initialState,
+  {},
   composedEnhancers
 )
 

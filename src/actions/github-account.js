@@ -23,9 +23,12 @@ export function itemFetchDataSuccess(item) {
   }
 }
 
-export function itemFetchData(url) {
+export function itemFetchData(id) {
   return (dispatch) => {
+    console.log("inItemFetchData")
     dispatch(itemIsLoading(true))
+    
+    const url = "https://api.github.com/users/" + id
 
     fetch(url)
       .then((response) => {
