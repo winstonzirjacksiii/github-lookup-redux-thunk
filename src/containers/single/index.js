@@ -1,8 +1,10 @@
 import React from 'react'
+import Single from './single'
 
 export default () => (
   <section>
-    <h1>Single Profile Info</h1>
-    <p>Here we'll lookup individual account info.</p>
+    {this.props}
+    <Single item={false} />
+  }
   </section>
 )
