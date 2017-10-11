@@ -1,10 +1,14 @@
 import React from 'react'
 import Single from './single'
 
-export default () => (
-  <section>
-    {this.props}
-    <Single item={false} />
+class index extends React.Component {
+  render() {
+    return (
+      <section>
+        <Single item={false} />
+      </section>
+    )
   }
-  </section>
-)
+}
+
+export default index
